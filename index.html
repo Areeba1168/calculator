@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <input class="result" id="result" type="text" readonly>
+        </div>
+        <div class="first">
+             <button class="num" onclick="number('7')">7</button>
+             <button class="num" onclick="number('8')">8</button>
+             <button class="num" onclick="number('9')">9</button>
+             <button class="num" onclick="number('*')">X</button>
+        </div>
+        <div class="first">
+            <button class="num" onclick="number('4')">4</button>
+            <button class="num" onclick="number('5')">5</button>
+            <button class="num" onclick="number('6')">6</button>
+            <button class="num" onclick="number('-')">-</button>
+       </div>
+        <div class="first">
+            <button class="num" onclick="number('1')">1</button>
+            <button class="num" onclick="number('2')">2</button>
+            <button class="num" onclick="number('3')">3</button>
+            <button class="num" onclick="number('+')">+</button>
+        </div>
+        <div class="first">
+            <button class="num" onclick="number('0')" >0</button>
+            <button class="num" onclick="number('.')" style="font-weight: bolder;margin-top: 2px;">.</button>
+            <button class="num" onclick="getResult()">=</button>
+            <button class="num" onclick="number('/')">/</button>
+        </div>
+        <div class="first">           
+            <button id="clear" class="clear" onclick="clearResult()">Cl</button>
+            <button class="back"onclick="backSpace()"><img src="image/delete.png" width="22px"></button>
+        </div>
+    </div>
+    
+</body>
+</html>
